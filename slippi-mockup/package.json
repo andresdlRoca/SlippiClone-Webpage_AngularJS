@@ -1,0 +1,18 @@
+{
+  "name": "slippi-mockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.8.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
