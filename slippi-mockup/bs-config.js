@@ -1,6 +1,6 @@
 module.exports = {
     server: {
-        baseDir: "./app",
+        baseDir: "./src",
         routes: {
             "/node_modules": "node_modules"
         }
