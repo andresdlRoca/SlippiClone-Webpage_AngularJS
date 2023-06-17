@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>My AngularJS App</title>
-    <script src="node_modules/angular/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
-<body ng-app="Slippi">
-    <h3>slippi.gg</h3>
+<body ng-app="Slippi-Homepage">
+    <nav class="navbar navbar-expand-lg navbar-light"></nav>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Slippi.gg</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collaspe navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/leaderboards" class="nav-link">Leaderboards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/downloads" class="nav-link">Downloads</a>
+                </li>
 
+            </ul>
+        </div>
     <div class="header">
+        <div ng-view></div>
         <div class="container">
-            
         </div>
     </div>
 
@@ -18,7 +42,10 @@
     <script src="app.js"></script>
 
     <!-- Controllers -->
-
+    <script src="/controllers/HomeController.js"></script>
+    <script src="/controllers/AboutController.js"></script>
+    <script src="/controllers/DownloadsController.js"></script>
+    <script src="/controllers/LeaderboardsController.js"></script>
 
     <!-- Directives -->
 
